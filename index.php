@@ -1,3 +1,18 @@
+<!-- 
+######################################################################
+#                                                                    #
+#  Please refer to the "readme.md" file provided in the GitHub      #
+#  repository before continuing. This file contains important       #
+#  information and instructions that will help you get started.      #
+#                                                                    #
+#  Total time taken to finish the project is estimated to be        #
+#  3-4 hours.                                                        #
+#                                                                    #
+######################################################################
+-->
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
