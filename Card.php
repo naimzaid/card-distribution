@@ -24,6 +24,13 @@ class Card{
       
     // Function to validate the number of people
     protected function validateNumOfPeople($numOfPeople) {
+        // validate $numof people must be number 
+        if (!is_numeric($numOfPeople)) {
+          echo "Irregularity occurred";
+          exit();
+        }
+
+
         if ($numOfPeople <= 0) {
           echo "Input value does not exist or value is invalid";
           exit();
