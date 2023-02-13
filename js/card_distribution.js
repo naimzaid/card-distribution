@@ -1,4 +1,5 @@
 
+    // send ajax request to card_distribution.php
     const form = $("#form");
     const result = $("#result");
     form.on("submit", function(e) {
