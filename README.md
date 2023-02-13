@@ -10,7 +10,7 @@ This project is a simple implementation of a playing card distribution system, d
 1. Clone this repository to your local machine
 
 ```bash 
-git clone https://github.com/<YOUR_GITHUB_USERNAME>/Playing-Card-Distribution.git
+git clone https://github.com/naimzaid/card-distribution.git
 ```
 
 
