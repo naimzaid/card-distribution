@@ -1,3 +1,2 @@
-FROM php:7.4
-WORKDIR /var/www/html
-COPY . /var/www/html
+FROM php:7.4-apache
+COPY ./ /var/www/html/
