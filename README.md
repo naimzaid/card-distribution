@@ -60,7 +60,7 @@ This docker-compose.yml file defines a web service that uses the my-php-app imag
 To start the container using Docker Compose, run the following command in your project directory:
 
 ```docker
-    docker-compose up
+    docker compose up -d --build
 ```
 
 This will start the container and display the container logs in your terminal.
