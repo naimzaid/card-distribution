@@ -23,7 +23,7 @@ cd Playing-Card-Distribution
 3. Run the following command to build a Docker image based on the Dockerfile.
 
 ```docker
-docker build -t [image_name] .
+docker build -t my-php-app .
 ```
 
 Note: The . at the end is important and specifies the build context, which is the current directory.
@@ -31,10 +31,46 @@ Note: The . at the end is important and specifies the build context, which is th
 4. Once the build is complete, run the following command to start a new container based on the image you just built:
 
 ```docker
-docker run -p 80:80 --name card_distribution -d playing-card-distribution
+docker run -p 8080:80 -v <your-file-location>:/var/www/html my-php-app
 ```
 
-5. Open a web browser and navigate to `http://localhost` to view the application.
+5. Open a web browser and navigate to `http://localhost:8080` to view the application.
+
+# Alternatively
+
+You can use a docker-compose.yml file to define and start your container. In your project directory, create a new file called docker-compose.yml with the following code:
+
+```yml
+javascript
+
+version: '3'
+
+services:
+  web:
+    image: my-php-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ~/Documents/interview-tyrell:/var/www/html
+```
+
+
+This docker-compose.yml file defines a web service that uses the my-php-app image, maps port 8080 on your machine to port 80 inside the container, and mounts your local <project-location> directory as a volume at the /var/www/html directory inside the container.
+
+To start the container using Docker Compose, run the following command in your project directory:
+
+```docker
+    docker-compose up
+```
+
+This will start the container and display the container logs in your terminal.
+
+### Access the PHP application:
+
+You should now be able to access your PHP application by navigating to http://localhost:8080 in your web browser. This should display the PHP info page with information about your PHP installation.
+
+If you want to modify your PHP application, simply edit the files in your local <project-location> directory, and the changes will be automatically reflected in the container.
+
 
 6. Enter the number of players and click the "Submit" button to receive the playing card distribution.
 
