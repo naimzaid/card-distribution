@@ -10,16 +10,12 @@
 #                                                                    #
 ######################################################################
 -->
-
-
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Playing Card Distribution</title>
     <link rel="stylesheet" type="text/css" href="/css/pico.min.css">
-    <!-- // import jquery min -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script defer src="js/card_distribution.js"></script> 

@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  web:
+    image: php:7.4-apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ~/Documents/code/personal/interview-tyrell:/var/www/html
